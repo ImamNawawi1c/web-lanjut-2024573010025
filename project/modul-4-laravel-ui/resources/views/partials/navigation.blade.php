@@ -1,16 +1,16 @@
-<nav class="navbar navbar-expend-lg {{ $theme ==='dark' ? 'navbar-dark bg-dark' : 'navbar-light bg-light' }} fixed-top shadow">
+<nav class="navbar navbar-expand-lg {{ $theme ==='dark' ? 'navbar-dark bg-dark' : 'navbar-light bg-light' }} fixed-top shadow">
     <div class="container">
         <a class="navbar-brand fw-bold" href="{{ route('home') }}">
             laravel UI Demo
         </a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-targer="#navbarNav">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav me-auto">
-                <li class="nav-itemm">
+                <li class="nav-item">
                     <a class="nav-link {{ request()->routeIs('home') ? 'active' : '' }}" href="{{ route('home') }}">Home</a>
 
                 </li>

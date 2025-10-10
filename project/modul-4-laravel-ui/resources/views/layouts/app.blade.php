@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id data-bs-theme="{{ $theme }}">
+<html lang="id" data-bs-theme="{{ $theme }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,7 @@
     <style>
         body{
             padding-top: 4rem;
-            transition: all 0.3 ease;
+            transition: all 0.3s ease;
             min-height: 100vh;
 
         }
@@ -41,12 +41,12 @@
 
     <x-footer :theme="$theme"/>
 
-    <script src=>"https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
     //smooth theme transition
     document.addEventListener('DOMContentLoaded', function() {
 
-        const themeLinks = document.querySelectorAll('a[href]*="switch-theme"');
+        const themeLinks = document.querySelectorAll('a[href*="switch-theme"]');
         themeLinks.forEach(link => {
             link.addEventListener('click', function(e) {
                 e.preventDefault();

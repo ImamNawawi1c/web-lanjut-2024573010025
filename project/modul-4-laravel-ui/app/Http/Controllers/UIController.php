@@ -27,14 +27,14 @@ class UIController extends Controller
     
     public function about(Request $request) {
     $theme = session('theme', 'light');
-    $alertmessage = 'Halaman ini menggunakan Partial Views!'; 
+    $alertMessage = 'Halaman ini menggunakan Partial Views!'; 
     $team = [
-        ['name' => 'Imam', 'role' => 'Developer'], 
-        ['name' => 'Ilham', 'role' => 'Designer'],
-        ['name' => 'Lepi', 'role' => 'Project Manager'] 
+        ['name' => 'Imam', 'role' => 'Pretty Boy'], 
+        ['name' => 'Ilham', 'role' => 'Ini mah kumar'],
+        ['name' => 'Lepi', 'role' => 'OG'] 
     ];
 
-    return view('about', compact('theme', 'alertmessage', 'team'));
+    return view('about', compact('theme', 'alertMessage', 'team'));
 }
 
     public function contact(Request $request)
